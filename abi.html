@@ -2189,8 +2189,8 @@ Whether a cookie is required is determined as follows:
     cookie is stored at offset <code>prefix_size - sizeof(cookie_t)</code>
     from the start of the allocation.  However, in some variant ABIs,
     padding is added after the cookie, which is stored at the start of
-    the allocation.  In either case, the contents of any padding bytes
-    are undefined.
+    the allocation.  In either case, any padding bytes have indeterminate
+    values.
   </ul>
 </ul>
 
